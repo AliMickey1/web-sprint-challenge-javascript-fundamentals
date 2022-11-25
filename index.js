@@ -16,6 +16,7 @@ function myFunction() {
 //myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
+// JavaScripts allows for nested scopes.  Variables that are defined in outer scopes can be used in inner scopes.  nestedfunction is an inner scope of the function myFunction (outer scope) which is where internal was defined.
 
 
 
@@ -30,10 +31,15 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  var summy = 0;
+while(num > 0)
+  {
+    summy = summy + num;
+    num--;
   }
+ return summy;
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
