@@ -196,7 +196,11 @@ function CuboidMaker(param){
   this.length = param.length;
   this.width = param.width;
   this.height = param.height;
+
 }
+
+
+
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
@@ -204,7 +208,11 @@ function CuboidMaker(param){
   💡 NOTE: Formula for cuboid volume: length * width * height   
 */
 
-
+CuboidMaker.prototype.volume = function(length, width, height)
+{
+  return (length * width * height);
+ 
+}
 
 
 
