@@ -70,10 +70,10 @@ const zooAnimals = [
     const displayNames = [];
     data.forEach(function(item)
    {
-      displayNames.push(item.animal_name);
+    displayNames.push(`name: ${item.animal_name}`);
+    displayNames.push(`scientific: ${item.scientific_name}`);
    });
   return displayNames;
-
   }
   
   
@@ -267,7 +267,6 @@ surfaceArea()
 
 }  
   
-  // const cuboidTwo = new CuboidMakerTwo();
 
 }
 
