@@ -68,7 +68,7 @@ const zooAnimals = [
 
   function animalNames(data){
     const displayNames = [];
-    zooAnimals.forEach(function(item)
+    data.forEach(function(item)
    {
       displayNames.push(item.animal_name);
    });
@@ -192,10 +192,10 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(attr){
-  attr.length = length;
-  attr.width = width;
-  attr.height = height;
+function CuboidMaker(param){
+  this.length = param.length;
+  this.width = param.width;
+  this.height = param.height;
 }
 
 
@@ -203,6 +203,8 @@ function CuboidMaker(attr){
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   💡 NOTE: Formula for cuboid volume: length * width * height   
 */
+
+
 
 
 
